@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --light-color: #fff;
+  --dark-color: #000;
+  --green-color: #7eff73;
+  --blue-color: #73abff;
+  --orange-color: #ff7373;
+  font-family: "DM Sans", sans-serif;
+}

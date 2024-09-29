@@ -1,0 +1,116 @@
+.overlayContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .statusContainer {
+    align-items: center;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px 0 #ffffff40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 605px;
+    width: 339px;
+  }
+  
+  
+  .slide {
+    height: 605px;
+    width: 339px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .images{
+    height:100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  
+   .prevBtn , .nextBtn {
+    /* position: absolute; */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .slideContent {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-weight: 700;
+  }
+  .firstContainer{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:22px;
+  }
+  .closeImg,.shareImg{
+    width:20px;
+    cursor: pointer;
+  }
+  
+  .reactions{
+    width: 65%;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom:5px;
+  }
+  .likeImg{
+    width:25px;
+    height:25px;
+    /* border:2px solid green; */
+  }
+  .likeContainer{
+    width:100px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    gap:5px;
+    text-align:center;
+  }
+  .likeCount{
+    font-size: 1rem;
+    color:var(--light-color);
+  }
+  
+  @media screen and (max-width:525px){
+    .prevBtn , .nextBtn {
+      display: none;
+    }
+    .statusContainer{
+      width:100%;
+      height:100%;
+    }
+  }

@@ -1,0 +1,194 @@
+.navContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .logoName {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark-color);
+  }
+  .logoContainer {
+    width: 15vw;
+    margin: 1.5vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+  }
+  .navlinkContainer {
+    width: 35vw;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 2vw;
+  }
+  .navlinkSubContainer1,
+  .navlinkSubContainer2 {
+    display: flex;
+    gap: 1vw;
+    /* border: 2px solid gold; */
+    align-items: center;
+  }
+  .navlinkRegister,
+  .navlinkSignin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 38px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: var(--orange-color);
+    color: var(--light-color);
+    text-decoration: none;
+    text-align: center;
+  }
+  .navlinkBookmark,
+  .navlinkAddStory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 130px;
+    height: 38px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: var(--orange-color);
+    color: var(--light-color);
+    text-decoration: none;
+    text-align: center;
+  }
+  .bookmarkImg {
+    width: 17px;
+    text-decoration: none;
+  }
+  .navlinkSignin {
+    background-color: var(--blue-color);
+  }
+  .navlinkProfile {
+    width: 3.8rem;
+    margin-top: 0.8rem;
+    text-decoration: none;
+  }
+  .navlinkHamburger {
+    position: relative;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    background-color: var(--light-color);
+    padding: 30px;
+    z-index: 99;
+  }
+  .logoutBtn {
+    width: 130px;
+    height: 38px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: var(--orange-color);
+    color: var(--light-color);
+    text-decoration: none;
+    text-align: center;
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .username,
+  .mobileUserName {
+    font-weight: 700;
+  }
+  @media screen and (max-width: 525px) {
+    .navlinkSubContainer1,
+    .navlinkSubContainer2 {
+      display: none;
+    }
+    .logoName {
+      font-size: 1.2rem;
+      margin-left: 3px;
+    }
+    .mobileMenu {
+      display: flex;
+      margin-top: 25px;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+      z-index: 99;
+    }
+  
+    .mobileHamburger {
+      margin-right: 15px;
+      position: relative;
+      top: -10px;
+    }
+  
+    .mobileDropdown {
+      width: 100%;
+      position: absolute;
+      top: 58px;
+      right: 0;
+      background-color: #ffffff;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .userDetails {
+      width: 70%;
+      display: flex;
+    }
+    .mobileDropDownClose {
+      width: 15px;
+      position: absolute;
+      top: 30px;
+      right: 16px;
+    }
+    .userDetailsSubContainer {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .mobileSubContainer1 {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .navlinkRegister,
+    .navlinkSignin,
+    .navlinkBookmark,
+    .navlinkAddStory,
+    .logoutBtn {
+      width: 120px;
+      height: 35px;
+      border-radius: 20px;
+    }
+    .bookmarkImg {
+      width: 15px;
+    }
+  }
